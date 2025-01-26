@@ -19,7 +19,7 @@ def my_list():
 
 def dict (keys):(get_items)
  keys = ('name' , 'age', 'job')
- get_items = ('john', '30', 'teacher')
+ get_items = ("john", "30", "teacher")
  print('job')
  dict.appendkeys('city')
  dict.apppendget_items('paris')
