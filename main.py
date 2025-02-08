@@ -17,8 +17,9 @@ def my_list():
 # Problem 2
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
-def dict (keys):(get_items)
- keys = ('name' , 'age', 'job')
+ def dict(keys):(get_items)
+ 
+ keys =["name" , "age", "job"]
  get_items = ("john", "30", "teacher")
  print('job')
  dict.appendkeys('city')
@@ -62,6 +63,25 @@ def count_vowels(s: str) -> int:
     Returns:
     - int: The number of vowels in the string
     """
+    vowels = {
+        'a',
+        'e',
+        'i',
+        'o',
+        'u',
+        'A',
+        'E',
+        'I',
+        'O',
+        'U',
+    }
+    count = 0
+    for letter in s:
+        if letter in vowels:
+            count += 1
+ 
+    return count
+
     # TODO: Implement this function
     pass
 
@@ -109,8 +129,14 @@ def merge_lists(list1: list, list2: list) -> list:
     Returns:
     - list: A new sorted list containing all elements from list1 and list2
     """
-    # TODO: Implement this function
-    pass
+list1 = [1,3,5]; list2 = [2,4,6]
+merged = merge_lists(list1 , str(list2))
+
+print(merged)
+
+
+# TODO: Implement this function
+pass
 
 def test_merge_lists():
     list1 = [1, 3, 5]
@@ -153,6 +179,18 @@ def word_lengths(words: list) -> list:
     Returns:
     - list: A list containing the lengths of the words
     """
+words = [
+    'I',
+    'Am',
+    'Turtle',
+    'grass'
+]
+num = 0 
+for num in words: 
+    count_num =+ 1
+    print(count_num)
+ 
+
     # TODO: Implement this function
     pass
 
@@ -192,8 +230,17 @@ def reverse_string(s: str) -> str:
     Returns:
     - str: The reversed string
     """
-    # TODO: Implement this function
-    pass
+def reverse_string(s):
+ 
+ text_string = 'growth' 
+
+ return s[ ::-1 ]
+
+ print(reverse_string)
+
+
+ # TODO: Implement this function
+pass
 
 
 def test_reverse_string():
@@ -232,6 +279,15 @@ def intersection(list1: list, list2: list) -> list:
     Returns:
     - list: The intersection of the two lists
     """
+
+def intersection(a , b):
+    a = [1,2,10,21,30,4,4]
+    b =[1,4,4,88,21,36]
+
+    res =  list(set(a) & set(b))
+
+    print(res)
+
     # TODO: Implement this function
     pass
 
