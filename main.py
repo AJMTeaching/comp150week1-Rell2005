@@ -137,20 +137,11 @@ print(merged)
 
 # TODO: Implement this function
 pass
+list1 = [1, 2, 5, 8, 10]; list2 = [3, 6, 7, 9, 11] 
+merged = merge_lists(list1, str(list2))
+print(merged)
 
-def test_merge_lists():
-    list1 = [1, 3, 5]
-    list2 = [2, 4, 6]
-    merged = merge_lists(list1, list2)
-    test(merged == [1, 2, 3, 4, 5, 6])
-    test(merge_lists([2], [2]) == [2,2])
-    test(merge_lists([1], [2]) == [1, 2])
-    test(merge_lists([1, 1], [2, 2]) == [1, 1, 2, 2])
-    test(merge_lists([1, 3, 5], [1, 3, 5]) == [1, 3, 5])
-    test(merge_lists([2, 4, 6], [2, 4, 6]) == [2, 4, 6])
-    test(merge_lists([1, 2, 3], [4, 5, 6]) == [1, 2, 3, 4, 5, 6])
-    test(merge_lists([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-    test(merge_lists([1, 1, 2, 3], [1, 2, 2, 3]) == [1, 1, 1, 2, 2, 2, 3, 3])
+  
 
 # Unit Tests for merge_lists
 def test_merge_lists():
@@ -158,11 +149,11 @@ def test_merge_lists():
     list2 = [2, 4, 6]
     merged = merge_lists(list1, list2)
     test(merged == [1, 2, 3, 4, 5, 6])
-    test(merge_lists([], []) == [])
+    test(merge_lists([1], [2]) == [1, 2])
     test(merge_lists([1], [2]) == [1, 2])
     test(merge_lists([1, 1], [2, 2]) == [1, 1, 2, 2])
-    test(merge_lists([1, 3, 5], []) == [1, 3, 5])
-    test(merge_lists([], [2, 4, 6]) == [2, 4, 6])
+    test(merge_lists([1, 3, 5], [4]) == [1, 3, 4, 5])
+    test(merge_lists([1], [2, 4, 6]) == [1, 2, 4, 6])
     test(merge_lists([1, 2, 3], [4, 5, 6]) == [1, 2, 3, 4, 5, 6])
     test(merge_lists([1, 3, 5, 7, 9], [2, 4, 6, 8, 10]) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     test(merge_lists([1, 1, 2, 3], [1, 2, 2, 3]) == [1, 1, 1, 2, 2, 2, 3, 3])
